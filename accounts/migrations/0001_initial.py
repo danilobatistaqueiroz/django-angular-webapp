@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             name='Account',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('Name', models.CharField(max_length=64, verbose_name='Name of Account')),
+                ('name', models.CharField(max_length=64, verbose_name='Name of Account')),
                 ('email', models.EmailField(max_length=254)),
                 ('phone', models.CharField(max_length=20)),
                 ('industry', models.CharField(blank=True, choices=[('FINANCE', 'FINANCE'), ('HEALTHCARE', 'HEALTHCARE'), ('INSURANCE', 'INSURANCE'), ('LEGAL', 'LEGAL'), ('MANUFACTURING', 'MANUFACTURING'), ('PUBLISHING', 'PUBLISHING'), ('REAL ESTATE', 'REAL ESTATE'), ('SOFTWARE', 'SOFTWARE')], max_length=255, null=True, verbose_name='Industry Type')),
